@@ -2,7 +2,7 @@ let num = [];
 let ope = [];
 
 function insereNum(num) {
-    if (ope[ope.length - 1] === '=') {
+    if (ope[ope.length - 1] === '=' || ope[ope.length - 1] === '%') {
         limpaNum();
     }
     document.getElementById('painel').value += num;
@@ -150,7 +150,7 @@ function efetuaPerc() {
         let input = document.querySelector('#painel');
         let numPai = parseFloat(input.value);
         num.push(numPai);
-        let result = numPai / 100 * num[num.length - 2];
+        let result = num[num.length - 2] / numPai * 100;
         num.push(result);
         document.getElementById('painel').value = null;
         document.getElementById('painel').value = num[num.length - 1];
