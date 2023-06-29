@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc.roof</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="itemCABEÇALHO">calculadora</div>
+        <div id="itemPAINEL">
+            <input id="painel" type="text">
+            <h1 id="resultArea"></h1>
+        </div>
+        <button id="item1" onclick="insereNum('1')">1</button>
+        <button id="item2" onclick="insereNum('2')">2</button>
+        <button id="item3" onclick="insereNum('3')">3</button>
+        <button id="itemDiv" onclick="efetuaCont('divisao')">/</button>
+        <button id="itemCE" onclick="limpaNum()">CE</button>
+        <button id="item4" onclick="insereNum('4')">4</button>
+        <button id="item5" onclick="insereNum('5')">5</button>
+        <button id="item6" onclick="insereNum('6')">6</button>
+        <button id="itemMult" onclick="efetuaCont('multiplicacao')">*</button>
+        <button id="item7" onclick="insereNum('7')">7</button>
+        <button id="item8" onclick="insereNum('8')">8</button>
+        <button id="item9" onclick="insereNum('9')">9</button>
+        <button id="itemSoma" onclick="efetuaCont('soma')">+</button>
+        <button id="itemIgual" onclick="igualResult()">=</button>
+        <button id="item%" onclick="efetuaPerc('%')">%</button>
+        <button id="item0" onclick="insereNum('0')">0</button>
+        <button id="itemVirg" onclick="insereNum('.')">,</button>
+        <button id="itemSubt" onclick="efetuaCont('subtracao')">-</button>
+    </div>
+    <footer>
+        calc@alex.tech
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
